@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <title>Rainbow Catering Club</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .container {
+            background-color: #ffffff;
+            width: 320px;
+            margin: 0 auto;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+            border-top: 5px solid #fca4ff;
+        }
+
+        h2 {
+            color: #21975c;
+            margin-bottom: 5px;
+        }
+
+        p.subtitle {
+            font-size: 12px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 90%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 95%;
+            padding: 10px;
+            background-color: #9fd1fb;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #ffd35b;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 12px;
+            background-color: #e3f2fd;
+            border: 1px solid #90caf9;
+            color: #0d47a1;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Rainbow Catering Club</h2>
+        <p class="subtitle">CANDIDATE VERIFICATION SYSTEM</p>
+
+        <!-- Matching IDs used in main.py -->
+        <input type="text" id="fname" placeholder="First Name"><br>
+        <input type="text" id="lname" placeholder="Last Name"><br>
+
+        <!-- Updated py-click function name -->
+        <button py-click="check_candidate">ENTER</button>
+
+        <div id="result">Enter your name and click Enter.</div>
+    </div>
+
+    <footer>
+        &copy; 2026 Rainbow Catering Club &bull; Seatwork 2 &bull; 2nd Quarter
+    </footer>
+
+    <script type="py" src="main.py" config='{"packages": []}'></script>
+
+</body>
+</html>
